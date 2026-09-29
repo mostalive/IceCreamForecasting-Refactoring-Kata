@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceCreamScorer", "src\IceCr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceCreamScorerTests", "test\IceCreamScorerTests.csproj", "{4007A4E6-0DC4-4271-B549-D49666B538DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThawIceCream", "ThawIceCream\ThawIceCream.csproj", "{434A8786-20E9-4B72-A284-006635F70A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThawIceCreamTest", "ThawIceCreamTest\ThawIceCreamTest.csproj", "{5DB858F8-600C-4C2A-BE52-B54B3C24D8C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{4007A4E6-0DC4-4271-B549-D49666B538DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4007A4E6-0DC4-4271-B549-D49666B538DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4007A4E6-0DC4-4271-B549-D49666B538DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{434A8786-20E9-4B72-A284-006635F70A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434A8786-20E9-4B72-A284-006635F70A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434A8786-20E9-4B72-A284-006635F70A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434A8786-20E9-4B72-A284-006635F70A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB858F8-600C-4C2A-BE52-B54B3C24D8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB858F8-600C-4C2A-BE52-B54B3C24D8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB858F8-600C-4C2A-BE52-B54B3C24D8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB858F8-600C-4C2A-BE52-B54B3C24D8C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
