@@ -15,6 +15,7 @@
 //   IceCreamShop    — the client.  Maintains state and mediates interactions
 
 using System;
+using System.Threading;
 
 public enum Warmth
 {
@@ -29,13 +30,32 @@ public enum ThawAmount
     Low
 }
 
-public class Thermometer
+// The Thermometer is owned by a different team.
+// We are not allowed to make changes to it
+// And we prefer to avoid difficult conversations
+public sealed class Thermometer
 {
     private readonly Random _rng = new();    // stand-in for the hardware
+    private static Thermometer _theSingletonInstance = null;
+
+    private Thermometer()
+    {
+        Thread.Sleep(3000);   // simulate slow hardware startup
+    }
 
     public byte Read()
     {
         return (byte)_rng.Next(50); // raw sensor value
+    }
+
+    //Singleton. the thermometer takes a long time to start
+    public static Thermometer GetInstance()
+    {
+        if (_theSingletonInstance is null)
+        {
+            _theSingletonInstance = new Thermometer();
+        }
+        return _theSingletonInstance;
     }
 }
 
@@ -46,7 +66,7 @@ public class IceCreamShop
 
     public IceCreamShop()
     {
-        _thermometer = new();
+        _thermometer = Thermometer.GetInstance();
     }
 
     public ThawAmount ThawStock()
